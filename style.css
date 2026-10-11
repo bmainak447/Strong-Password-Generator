@@ -1,0 +1,86 @@
+body{
+    background: linear-gradient(#030215, #000739, #030215);
+
+    color: #d1dff0ea;
+    font-family:'nunito', sans-serif;
+
+}
+img{
+    height: 420px;
+    width: 345px;
+    float: right;
+    border-radius: 30px;
+    margin-right: 6%;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+#span{
+    color: #11f492da;
+}
+#container{
+    margin: auto 30px auto 40px;
+    margin-top: 6%;
+    margin-left: 5%;
+    
+
+
+}
+#password1, #password2{
+    width: 22%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #001147;
+    padding-top: 12px;
+    padding-left: 15px;
+    display: inline-block;
+    margin: 20px 10px 10px 10px;
+    margin-left: auto;
+    font-size: 22px;
+    cursor: pointer;
+}
+button{
+    width: 210px;
+    height: 45px;
+    font-size: 18px;
+    border-radius: 7px;
+    border: none;
+    background-color: #15b972;
+    color: #ffffff;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+
+}
+
+button::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(247, 249, 248, 0.5);
+    border-radius: 50%;
+    transform: scale(0);
+    opacity: 0;
+    pointer-events: none;
+}
+
+button:active::after {
+    animation: wave 0.5s ease-out;
+}
+
+@keyframes wave {
+    from {
+        transform: scale(0);
+        opacity: 1;
+    }
+    to {
+        transform: scale(25);
+        opacity: 0;
+    }
+}
